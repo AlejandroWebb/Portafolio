@@ -1,8 +1,3 @@
-/* ════════════════════════════════════════
-   PORTAFOLIO — main.js
-   ════════════════════════════════════════ */
-
-/* ── 1. CUSTOM CURSOR ── */
 (function initCursor() {
   const cursor     = document.createElement('div');
   const cursorRing = document.createElement('div');
@@ -21,7 +16,6 @@
     cursor.style.top  = my - 6  + 'px';
   });
 
-  // Ring follows with lag
   (function animateRing() {
     rx += (mx - rx - 18) * .12;
     ry += (my - ry - 18) * .12;
@@ -39,7 +33,6 @@
     cursorRing.classList.remove('clicking');
   });
 
-  // Hover: grow ring on links/buttons
   document.querySelectorAll('a, button, .tech-tag, .extra-card, .exp-card').forEach(el => {
     el.addEventListener('mouseenter', () => { cursorRing.style.transform = 'scale(1.6)'; });
     el.addEventListener('mouseleave', () => { cursorRing.style.transform = 'scale(1)'; });
@@ -47,7 +40,6 @@
 })();
 
 
-/* ── 2. MATRIX RAIN BACKGROUND ── */
 (function initMatrix() {
   const canvas = document.getElementById('matrix-bg');
   const ctx    = canvas.getContext('2d');
@@ -91,14 +83,12 @@
 })();
 
 
-/* ── 3. SCROLL REVEAL ── */
 (function initReveal() {
   const elements = document.querySelectorAll('.reveal');
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry, i) => {
       if (entry.isIntersecting) {
-        // Stagger delay
         setTimeout(() => {
           entry.target.classList.add('visible');
         }, i * 60);
@@ -111,15 +101,14 @@
 })();
 
 
-/* ── 4. TYPING EFFECT on name ── */
 (function initTyping() {
   const el = document.querySelector('.profile-name');
   if (!el) return;
 
   const fullText = el.innerHTML;
-  el.style.opacity = '1'; // keep visible
+  el.style.opacity = '1'; 
 
-  // Typewriter on alias only
+
   const alias = el.querySelector('.alias');
   if (!alias) return;
   const target = alias.textContent;
@@ -137,18 +126,10 @@
 })();
 
 
-/* ── 5. AVATAR click easter egg ── */
 (function initAvatarEgg() {
   const avatar = document.getElementById('avatarImg');
   if (!avatar) return;
   let clicks = 0;
-
-  const avatars = [
-    'https://i.pravatar.cc/150?img=33',
-    'https://i.pravatar.cc/150?img=12',
-    'https://i.pravatar.cc/150?img=55',
-    'https://i.pravatar.cc/150?img=8',
-  ];
 
   avatar.addEventListener('click', () => {
     clicks++;
@@ -164,8 +145,7 @@
 })();
 
 
-/* ── 6. ACTIVE NAV HIGHLIGHT (optional sticky nav) ── */
-/* If you add a <nav> later, this handles scroll-spy automatically */
+
 (function initScrollSpy() {
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('nav a[href^="#"]');
@@ -183,7 +163,6 @@
 })();
 
 
-/* ── 7. SMOOTH reveal on load ── */
 window.addEventListener('load', () => {
   document.body.style.opacity = '0';
   document.body.style.transition = 'opacity .4s ease';
