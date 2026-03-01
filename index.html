@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Miguel Blasquez Iquiza | Portafolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Fondo animado -->
+  <canvas id="matrix-bg"></canvas>
+
+  <div class="page-wrapper">
+    <div class="container">
+
+      <!-- ═══ HEADER ═══ -->
+      <header class="profile-header reveal">
+        <div class="avatar-wrapper">
+          <img src="https://i.pravatar.cc/150?img=33" alt="Neo" class="avatar" id="avatarImg"/>
+          <div class="avatar-ring"></div>
+          <span class="status-dot"></span>
+        </div>
+        <div class="profile-info">
+          <h1 class="profile-name">Miguel Blasquez Iquiza <span class="alias">(Ingeniero)</span></h1>
+          <p class="profile-title">Programador, hacker y el Elegido</p>
+          <p class="profile-location"><i class="fa-solid fa-location-dot"></i> Cochabamba, Bolivia</p>
+          <div class="social-links">
+            <a href="mailto:neo@metacortex.com" class="btn-email">
+              <i class="fa-solid fa-envelope"></i> migoga2015@gmail.com
+            </a>
+            <a href="#" class="btn-icon" title="CV"><i class="fa-regular fa-file"></i></a>
+            <a href="#" class="btn-icon" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="btn-icon" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </header>
+
+      <hr class="divider reveal"/>
+
+      <!-- ═══ SOBRE MÍ ═══ -->
+      <section class="section reveal" id="about">
+        <h2 class="section-title">Sobre mí</h2>
+        <p class="about-text">
+          Soy estudiante de último año de Ingeniería en Sistemas con enfoque en desarrollo de software y bases de datos. Me especializo en la creación de aplicaciones web utilizando tecnologías como PHP, MySQL, JavaScript y Python, con conocimientos en diseño e implementación de bases de datos relacionales y NoSQL.
+
+Me interesa el desarrollo de soluciones tecnológicas que optimicen procesos, especialmente en el ámbito académico y organizacional. Tengo experiencia trabajando en proyectos prácticos que integran backend, bases de datos y diseño funcional, aplicando buenas prácticas de programación y análisis de requerimientos.
+        </p>
+      </section>
+
+      <hr class="divider reveal"/>
+
+      <!-- ═══ TECNOLOGÍAS ═══ -->
+      <section class="section reveal" id="tech">
+        <h2 class="section-title">Tecnologías</h2>
+        <div class="tags-list">
+          <span class="tech-tag"><span class="tag-icon">🟩</span> MySQL</span>
+          <span class="tech-tag"><span class="tag-icon">🟩</span> JavaScript</span>
+          <span class="tech-tag"><span class="tag-icon">🟩</span> Php</span>
+          <span class="tech-tag"><span class="tag-icon">🟩</span> Css</span>
+          <span class="tech-tag"><span class="tag-icon">🐍</span> Python</span>
+        </div>
+      </section>
+
+      <hr class="divider reveal"/>
+
+      <!-- ═══ EXPERIENCIA ═══ -->
+      <section class="section reveal" id="exp">
+        <h2 class="section-title">Experiencia</h2>
+        <div class="card-list">
+
+          <div class="exp-card">
+            <div class="exp-icon"><i class="fa-solid fa-terminal"></i></div>
+            <div class="exp-body">
+              <p class="exp-company">Desarrollo de proyectos académicos y personales</p>
+              <p class="exp-role">Diseño y modelado de bases de datos en SQL Server y MongoDB.</p>
+              <p class="exp-role">Control de versiones con Git y GitHub para gestión de proyectos.</p>
+              <p class="exp-role">Instalación, configuración y optimización de entornos de desarrollo (Laravel, MongoDB, etc.).</p>
+              <p class="exp-role">Implementación de sistemas de registro con validación de datos en PHP y MySQL.</p>
+              <p class="exp-desc">Programador</p>
+            </div>
+            <span class="exp-date badge-active">2023 – Actualidad</span>
+          </div>
+
+          <div class="exp-card">
+            <div class="exp-icon"><i class="fa-solid fa-infinity"></i></div>
+            <div class="exp-body">
+              <p class="exp-company">Soporte técnico básico y optimización de equipos</p>
+              <p class="exp-role">Migración de discos HDD a SSD/NVMe para mejorar rendimiento.</p>
+              <p class="exp-desc">Instalación y configuración de sistemas y herramientas de desarrollo.</p>
+            </div>
+            <span class="exp-date badge-active">2023 – Actualidad</span>
+          </div>
+
+        </div>
+      </section>
+
+      <hr class="divider reveal"/>
+
+      <!-- ═══ PROYECTOS ═══ -->
+      <section class="section reveal" id="projects">
+        <h2 class="section-title">Proyectos</h2>
+        <div class="card-list">
+
+          <div class="project-card">
+            <div class="exp-icon"><i class="fa-solid fa-chart-bar"></i></div>
+            <div class="project-body">
+              <p class="exp-company">Sistema “Olimpaz” – Campeonato Interno Universitario</p>
+              <p class="exp-role">Era una plataforma para:</p>
+              <p class="exp-desc">Registrar equipos / jugadores.</p>
+              <p class="exp-desc">Gestionar partidos.</p>
+              <p class="exp-desc">Llevar control de resultados.</p>
+              <p class="exp-desc">Visualizar encuentros del campeonato universitario.</p>
+              <div class="project-tags">
+                <span class="tech-tag small"><span class="tag-icon">🐍</span> JavaScript</span>
+                <span class="tech-tag small"><span class="tag-icon">🌀</span> PHP</span>
+                <span class="tech-tag small"><span class="tag-icon">🟩</span> MySQL</span>
+                <span class="tech-tag small"><span class="tag-icon">🧠</span> HTML</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn-icon sm"><i class="fa-solid fa-link"></i></a>
+                <a href="#" class="btn-icon sm"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <div class="project-thumb" style="background-image: url('https://images.unsplash.com/photo-1486325212027-8081e485255e?w=300&q=80')"></div>
+          </div>
+
+          <div class="project-card">
+            <div class="exp-icon"><i class="fa-solid fa-bug"></i></div>
+            <div class="project-body">
+              <p class="exp-company">Aplicación móvil con análisis biomecánico (UAB)</p>
+              <p class="exp-role">Era:</p>
+
+              <p class="exp-desc">Aplicación móvil</p>
+              <p class="exp-desc">Uso de visión computacional</p>
+              <p class="exp-desc">Análisis biomecánico</p>
+              <p class="exp-desc">Enfocado en supervisión de práctica individual de piano</p>
+              <p class="exp-desc">Para el Departamento de Música – UAB</p>
+              <div class="project-tags">
+                <span class="tech-tag small"><span class="tag-icon">🟩</span> Binario</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn-icon sm"><i class="fa-solid fa-link"></i></a>
+                <a href="#" class="btn-icon sm"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <div class="project-thumb" style="background-image: url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=300&q=80')"></div>
+          </div>
+
+        </div>
+      </section>
+
+      <hr class="divider reveal"/>
+
+      <!-- ═══ FORMACIÓN ═══ -->
+      <section class="section reveal" id="edu">
+        <h2 class="section-title">Formación</h2>
+        <div class="card-list">
+
+          <div class="exp-card">
+            <div class="exp-icon"><i class="fa-solid fa-school"></i></div>
+            <div class="exp-body">
+              <p class="exp-company">Universidad Adventista de Bolivi a</p>
+              <p class="exp-role">Ultimo año de Ingeniería</p>
+              <p class="exp-desc">Aprendí cosas.</p>
+            </div>
+            <div class="edu-badge">
+            <span class="exp-date badge-active">2022 – Actualidad</span>
+              <span class="verified"><i class="fa-solid fa-shield-halved"></i></span>
+            </div>
+          </div>
+
+          <div class="exp-card">
+            <div class="exp-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="exp-body">
+              <p class="exp-company">Unidad Educativa Adventista de Bolivia</p>
+              <p class="exp-role">Bachiller en Humanidades</p>
+              <p class="exp-desc">2022</p>
+            </div>
+            <div class="edu-badge">
+            <span class="exp-date badge-active">2022</span>
+              <span class="verified"><i class="fa-solid fa-shield-halved"></i></span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <hr class="divider reveal"/>
+
+      <!-- ═══ EXTRA ═══ -->
+      <section class="section reveal" id="extra">
+        <h2 class="section-title">Extra</h2>
+        <div class="extra-grid">
+
+          <div class="extra-card">
+            <div class="extra-img" style="background-image:url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400&q=80')"></div>
+            <div class="extra-info">
+              <p class="extra-title">Desarrollo de Software</p>
+              <p class="extra-desc">Implementación de sistemas web con PHP y conexión a bases de datos MySQL.</p>
+            </div>
+          </div>
+
+          <div class="extra-card">
+            <div class="extra-img" style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&q=80')"></div>
+            <div class="extra-info">
+              <p class="extra-title">Diagnóstico de Hardware</p>
+              <p class="extra-desc">Evaluación y verificación del funcionamiento de componentes físicos en equipos de cómputo.</p>
+            </div>
+          </div>
+
+          <div class="extra-card">
+            <div class="extra-img" style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80')"></div>
+            <div class="extra-info">
+              <p class="extra-title">Soporte Técnico</p>
+              <p class="extra-desc">Implementación y mantenimiento de entornos Windows, instalación de herramientas y soporte técnico a nivel usuario.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <hr class="divider reveal"/>
+
+      <!-- ═══ FOOTER ═══ -->
+      <footer class="footer reveal">
+        <p class="footer-name">Miguel A. Blasquez Iquiza</p>
+        <div class="social-links">
+          <a href="mailto:neo@metacortex.com" class="btn-email">
+            <i class="fa-solid fa-envelope"></i> migoga2015@gmail.com
+          </a>
+          <a href="#" class="btn-icon"><i class="fa-regular fa-file"></i></a>
+          <a href="#" class="btn-icon"><i class="fa-brands fa-github"></i></a>
+          <a href="#" class="btn-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </footer>
+
+    </div><!-- /container -->
+  </div><!-- /page-wrapper -->
+
+  <script src="main.js"></script>
+</body>
+</html>
